@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e0f7e9;
+  text-align: center;
+  padding-top: 70px;
+  overflow-x: hidden;
+}
+
+/* Imagem de fundo */
+.imagem_fundo {
+  background-image: url('img/1.jpg');
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: blur(6px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+/* Barra superior */
+.BarraGM {
+  font-family: "The Seasons", serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #025c2e;
+  color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  z-index: 1000;
+  text-align: center;
+}
+
+.icone-barra {
+  width: 60px;
+  height: 60px;
+  margin-right: 2px;
+}
+
+/* Ajusta layout da barra para alinhar imagem e texto lado a lado */
+.BarraGM {
+  flex-direction: row; /* Muda para linha */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo da caixa com mensagem e botão */
+.caixa {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  margin: 100px auto;
+  position: relative;
+  z-index: 1;
+}
+
+.caixa p {
+  font-family: "The Seasons", serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.botao {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+  background-color: #218838;
+}

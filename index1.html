@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sustentabilidade</title>
+  <link rel="stylesheet" href="style1.css" />
+  <link href="https://fonts.googleapis.com/css2?family=The+Seasons&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Barra fixa no topo -->
+  <header class="BarraGM">
+    <img src="img/icone-gm.png" alt="Ícone" class="icone-barra" />
+    <p>EEEP Gonzaga Mota</p>Sustentabilidade e o futuro do planeta
+  </header>
+
+  <!-- Imagem de fundo -->
+  <div class="imagem_fundo"></div>
+
+  <!-- Caixa 1: Mensagem inicial -->
+  <div class="caixa" id="caixa-inicial">
+    <p>Obrigado por querer participar da nossa pesquisa, vamos lá?</p>
+    <button class="botao" onclick="mostrarFormulario()">Vamos lá</button>
+  </div>
+
+  <!-- Caixa 2: Formulário da pergunta -->
+  <div class="caixa" id="caixa-formulario" style="display: none;">
+    <p>Você pratica atividades físicas?</p>
+    <form>
+      <label><input type="radio" name="atividade" value="todos"> Todos os dias</label><br>
+      <label><input type="radio" name="atividade" value="frequente"> Frequentemente</label><br>
+      <label><input type="radio" name="atividade" value="as_vezes"> De vez em quando</label><br>
+      <label><input type="radio" name="atividade" value="raro"> Raramente</label><br>
+      <label><input type="radio" name="atividade" value="nunca"> Nunca</label><br><br>
+      <button class="botao">Próxima</button>
+    </form>
+  </div>
+
+  <!-- Script externo -->
+  <script src="script1.js"></script>
+</body>
+</html>

@@ -33,8 +33,8 @@ body {
   background-color: #025c2e;
   color: #f1f1f1;
   display: flex;
-  flex-direction: column;
-  gap: 5px;
+  flex-direction: row; /* Muda para linha */
+  justify-content: center;
   align-items: center;
   padding: 10px 20px;
   font-size: 18px;
@@ -49,13 +49,6 @@ body {
   margin-right: 2px;
 }
 
-/* Ajusta layout da barra para alinhar imagem e texto lado a lado */
-.BarraGM {
-  flex-direction: row; /* Muda para linha */
-  justify-content: center;
-  align-items: center;
-}
-
 /* Estilo da caixa com mensagem e botão */
 .caixa {
   background-color: white;
@@ -63,7 +56,7 @@ body {
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  max-width: 400px;
+  max-width: 600px; /* Aumenta a largura para o formulário */
   margin: 100px auto;
   position: relative;
   z-index: 1;
@@ -84,8 +77,37 @@ body {
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-top: 15px;
 }
 
 .botao:hover {
   background-color: #218838;
+}
+
+/* Estilo específico para o botão "Próxima" */
+.proximo-botao {
+  background-color: #28a745; /* Verde */
+}
+
+.proximo-botao:hover {
+  background-color: #218838;
+}
+
+/* Estilo para o formulário */
+.caixa form {
+  text-align: left;
+  padding: 20px;
+  background-color: #d4edda; /* Verde claro */
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.caixa form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.caixa form input[type="radio"] {
+  margin-right: 10px;
 }

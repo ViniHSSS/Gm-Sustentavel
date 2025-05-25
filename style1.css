@@ -1,0 +1,178 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+/* Imagem de fundo */
+.imagem_fundo {
+  background-image: url('img/1.jpg');
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  filter: blur(6px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+/* Barra superior */
+.BarraGM {
+  font-family: "The Seasons", serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #025c2e;
+  color: #f1f1f1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  z-index: 1000;
+  text-align: center;
+}
+
+.icone-barra {
+  width: 50px;
+  height: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.intro-box, .question-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    z-index: 9999;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+.intro-box button, .question-box button {
+    background-color: #28a745;
+    color: #d1d1d1;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.intro-box button:hover, .question-box button:hover {
+    background-color: #218838;
+}
+
+/* Estado normal */
+.opcao-btn {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #28a745;
+  background-color: #fff;
+  color: #28a745;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  text-align: left;
+  user-select: none;
+}
+
+/* Estado selecionado */
+.opcao-btn.selecionado {
+  background-color: #28a745;
+  color: #02ea06;
+}
+
+
+/* Esconde o input radio */
+.opcao-btn input[type="radio"] {
+  display: none;
+}
+
+
+/* Novo estilo para o botão marcado */
+.opcao-btn input[type="radio"]:checked + label {
+  background-color: #28a745;
+  color: #d41717;
+  border-color: #1e7e34;
+}
+
+
+.opcao-btn:hover {
+  background-color: #28a745;
+  color: #fff;
+}
+
+/* Botão Próximo centralizado */
+#btnProximo {
+  display: block;
+  margin: 20px auto 0 auto;
+  padding: 10px 30px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  max-width: 200px;
+  width: auto;
+}
+
+#btnProximo:disabled {
+  background-color: #94d3a2;
+  cursor: not-allowed;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Esconde o rádio original */
+input[type="radio"] {
+  display: none;
+}
+
+/* Estilo do label como botão */
+label {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #28a745;
+  background-color: #fff;
+  color: #28a745;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  text-align: left;
+}
+
+/* Quando o rádio estiver selecionado, o label recebe essa estilização */
+input[type="radio"]:checked + label {
+  background-color: #28a745;
+  color: #fff;
+  border-color: #1e7e34;
+}
+
